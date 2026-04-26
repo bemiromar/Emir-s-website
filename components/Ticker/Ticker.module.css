@@ -1,0 +1,30 @@
+.ticker {
+  background: var(--surface);
+  border-top: var(--border);
+  border-bottom: var(--border);
+  padding: 12px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.inner {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  animation: ticker 30s linear infinite;
+}
+
+.sep {
+  color: var(--forest);
+  margin: 0 1.5rem;
+}
+
+.green {
+  color: var(--forest-glow);
+}
+
+.gold {
+  color: var(--sahara);
+}

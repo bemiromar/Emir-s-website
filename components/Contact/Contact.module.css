@@ -1,0 +1,41 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--surface);
+  border: var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
+  display: block;
+}
+
+.card:hover {
+  border-color: rgba(58, 175, 111, 0.3);
+  transform: translateY(-2px);
+}
+
+.label {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--forest-glow);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.value {
+  font-size: 13px;
+  color: var(--text-mid);
+  word-break: break-all;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

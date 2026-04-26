@@ -1,0 +1,28 @@
+.wrap {
+  background: var(--surface);
+  border-top: var(--border);
+  border-bottom: var(--border);
+  padding: 3rem 2.5rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.arabic {
+  font-size: clamp(52px, 10vw, 96px);
+  font-weight: 700;
+  color: rgba(30, 92, 58, 0.15);
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+  white-space: nowrap;
+  overflow: hidden;
+  direction: rtl;
+  animation: arabicSlide 20s linear infinite;
+}
+
+.units {
+  font-family: var(--mono);
+  font-size: clamp(13px, 2vw, 18px);
+  color: rgba(200, 150, 60, 0.2);
+  letter-spacing: 0.3em;
+  margin-top: 0.75rem;
+}

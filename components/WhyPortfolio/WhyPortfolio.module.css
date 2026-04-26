@@ -1,0 +1,10 @@
+.block {
+  background: var(--surface);
+  border: var(--border);
+  border-left: 2px solid var(--forest-glow);
+  border-radius: 0 8px 8px 0;
+  padding: 2rem 2rem 2rem 2.5rem;
+  font-size: 15px;
+  color: var(--text-mid);
+  line-height: 1.9;
+}

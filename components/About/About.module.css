@@ -1,0 +1,128 @@
+.skillGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skillCard {
+  background: var(--surface);
+  border: var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.skillCard:hover {
+  border-color: rgba(58, 175, 111, 0.2);
+  transform: translateY(-2px);
+}
+
+.skillTitle {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--forest-glow);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.75rem;
+}
+
+.skillText {
+  font-size: 13px;
+  color: var(--text-mid);
+  line-height: 1.7;
+}
+
+.toolsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.toolGroup {
+  background: var(--surface);
+  border: var(--border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+}
+
+.toolTitle {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--sahara);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.toolTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.toolTag {
+  padding: 3px 10px;
+  background: var(--surface2);
+  border: var(--border);
+  border-radius: 3px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-mid);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.toolTag:hover {
+  border-color: rgba(200, 150, 60, 0.3);
+  color: var(--sahara);
+}
+
+.toolNote {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  margin-top: 8px;
+}
+
+.langBox {
+  margin-top: 1.5rem;
+  background: var(--surface);
+  border: var(--border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+}
+
+.langRow {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.langItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.langName {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--text-light);
+}
+
+.langLevel {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text-dim);
+}
+
+.subTag {
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .skillGrid,
+  .toolsGrid {
+    grid-template-columns: 1fr;
+  }
+}

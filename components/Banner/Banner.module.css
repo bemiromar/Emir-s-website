@@ -1,0 +1,25 @@
+.banner {
+  background: var(--forest);
+  padding: 10px 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-bottom: 0.5px solid var(--forest-light);
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--sahara-light);
+  flex-shrink: 0;
+}
+
+.text {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.04em;
+  text-align: center;
+}
