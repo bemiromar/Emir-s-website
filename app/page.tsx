@@ -1,3 +1,7 @@
+'use client'
+
+import ElectricBorder from "@/components/ElectricBorder";
+
 export default function Home() {
   return (
       <>
@@ -114,7 +118,12 @@ export default function Home() {
         </div>
 
         {/* POURQUOI CE PORTFOLIO */}
-        <div style={{ maxWidth: "860px", margin: "0 auto", padding: "4rem 2.5rem 0" }}>
+
+        <ElectricBorder
+            color="#7df9ff"
+            speed={1}
+            chaos={0.12}
+            style={{ maxWidth: "860px", margin: "0 auto", padding: "4rem 2.5rem 0",  }}>
           <div className="section-tag">{"//"} Pourquoi ce portfolio</div>
           <div className="why-block">
             Dans un secteur aussi vaste que l&apos;énergie, se démarquer ne se résume pas à une liste de compétences. Ce
@@ -124,7 +133,7 @@ export default function Home() {
             L&apos;énergie — qu&apos;elle soit au cœur des territoires africains, des métropoles européennes ou des enjeux
             internationaux — est mon terrain. Et c&apos;est là où je veux contribuer.
           </div>
-        </div>
+        </ElectricBorder>
 
         {/* À PROPOS */}
         <section id="apropos">
